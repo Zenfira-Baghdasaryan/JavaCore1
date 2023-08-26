@@ -2,9 +2,19 @@ package classwork.homework;
 
 public class Homework1 {
     public static void main(String[] args) {
-        char c ='\n';
+     /*  char c ='\n';
         System.out.println("******"+c+"******"+c+"******"+c+"******"+c+"******"+c+"******");
+            */
+        System.out.println("******");
+        System.out.println("******");
+        System.out.println("******");
+        System.out.println("******");
+        System.out.println("******");
+        System.out.println("******");
 
-    }
+
+
+
+        }
 }
 
