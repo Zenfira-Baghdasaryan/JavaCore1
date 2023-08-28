@@ -5,16 +5,20 @@ public class Homework1 {
      /*  char c ='\n';
         System.out.println("******"+c+"******"+c+"******"+c+"******"+c+"******"+c+"******");
             */
-        System.out.println("******");
+      /*  System.out.println("******");
         System.out.println("******");
         System.out.println("******");
         System.out.println("******");
         System.out.println("******");
         System.out.println("******");
 
+       */
 
-
-
-        }
-}
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 6; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }}
+    }
 
