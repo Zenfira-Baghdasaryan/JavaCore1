@@ -2,49 +2,89 @@ package classwork.homework1;
 
 public class Homework1 {
     public static void main(String[] args) {
-       /* char a ='*';
-        System.out.println(a);
-        System.out.println(a+" "+a);
-        System.out.println(a+" "+a+" "+a);
-        System.out.println(a+" "+a+" "+a+" "+a);
-        System.out.println(a+" "+a+" "+a+" "+a+" "+a);
 
-        */
-/*   char a='*';
-        System.out.println(a+" "+a+" "+a+" "+a+" "+a);
-        System.out.println(a+" "+a+" "+a+" "+a);
-        System.out.println(a+" "+a+" "+a);
-        System.out.println(a+" "+a);
-        System.out.println(a);
+        for (int i = 1; i < 5; i++) ;
 
- */
-    /*    char a = '*';
-        System.out.println("       " + " " + a);
-        System.out.println("      " + a + " " + a);
-        System.out.println("    " + a + " " + a + " " + a);
-        System.out.println("  " + a + " " + a + " " + a+" "+a);
-        System.out.println(a + " " + a + " " + a+" "+a+" "+a);
+        System.out.println("*");
+        System.out.println("* *");
+        System.out.println("* * *");
+        System.out.println("* * * *");
+        System.out.println("* * * * *");
 
+        System.out.println();
+        System.out.println("* * * * *");
+        System.out.println("* * * *");
+        System.out.println("* * *");
+        System.out.println("* *");
+        System.out.println("*");
 
-     */
-       /* char a ='*';
-        System.out.println(a + " " + a + " " + a+" "+a+" "+a);
-        System.out.println("  " + a + " " + a + " " + a+" "+a);
-        System.out.println("    " + a + " " + a + " " + a);
-        System.out.println("      " + a + " " + a);
-        System.out.println("       " + " " + a);
+        System.out.println();
+        System.out.println("        *");
+        System.out.println("      * *");
+        System.out.println("    * * *");
+        System.out.println("  * * * *");
+        System.out.println("* * * * *");
 
-        */
-        char a ='*';
-        System.out.println("    "+a+"   ");
-        System.out.println("   "+a+" "+a+"   ");
-        System.out.println("  "+a+" "+a+" "+a+"  ");
-        System.out.println(" "+a+" "+a+" "+a+" "+a+" ");
-        System.out.println(a+" "+a+" "+a+" "+a+" "+a);
-        System.out.println(" "+a+" "+a+" "+a+" "+a+" ");
-        System.out.println("  "+a+" "+a+" "+a+"  ");
-        System.out.println("   "+a+" "+a+"   ");
-        System.out.println("    "+a+"   ");
+        System.out.println();
+        System.out.println("* * * * *");
+        System.out.println("  * * * *");
+        System.out.println("    * * *");
+        System.out.println("      * *");
+        System.out.println("        *");
 
+        System.out.println();
+        System.out.println("    *    ");
+        System.out.println("   * *   ");
+        System.out.println("  * * *  ");
+        System.out.println(" * * * * ");
+        System.out.println("* * * * *");
+        System.out.println(" * * * * ");
+        System.out.println("  * * *  ");
+        System.out.println("   * *  ");
+        System.out.println("    *  ");
     }
-}
+
+            /*  char a ='*';
+        System.out.println(a);
+        System.out.println(a+" "+a);
+        System.out.println(a+" "+a+" "+a);
+        System.out.println(a+" "+a+" "+a+" "+a);
+        System.out.println(a+" "+a+" "+a+" "+a+" "+a);
+
+        System.out.println();
+        System.out.println(a+" "+a+" "+a+" "+a+" "+a);
+        System.out.println(a+" "+a+" "+a+" "+a);
+        System.out.println(a+" "+a+" "+a);
+        System.out.println(a+" "+a);
+        System.out.println(a);
+
+        System.out.println();
+        System.out.println("       " + " " + a);
+        System.out.println("      " + a + " " + a);
+        System.out.println("    " + a + " " + a + " " + a);
+        System.out.println("  " + a + " " + a + " " + a+" "+a);
+        System.out.println(a + " " + a + " " + a+" "+a+" "+a);
+
+        System.out.println();
+        System.out.println(a + " " + a + " " + a+" "+a+" "+a);
+        System.out.println("  " + a + " " + a + " " + a+" "+a);
+        System.out.println("    " + a + " " + a + " " + a);
+        System.out.println("      " + a + " " + a);
+        System.out.println("       " + " " + a);
+
+
+        System.out.println();
+        System.out.println("    "+a+"   ");
+        System.out.println("   "+a+" "+a+"   ");
+        System.out.println("  "+a+" "+a+" "+a+"  ");
+        System.out.println(" "+a+" "+a+" "+a+" "+a+" ");
+        System.out.println(a+" "+a+" "+a+" "+a+" "+a);
+        System.out.println(" "+a+" "+a+" "+a+" "+a+" ");
+        System.out.println("  "+a+" "+a+" "+a+"  ");
+        System.out.println("   "+a+" "+a+"   ");
+        System.out.println("    "+a+"   ");
+    }}}
+*/
+        }
+
+
