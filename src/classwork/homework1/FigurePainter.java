@@ -103,8 +103,9 @@ public class FigurePainter {
             System.out.print("        " + '*');
         }
 
-        
+
         /*homework 5 */
+        System.out.println();
         System.out.println();
         for (int i = '*'; i < 1; i++) ;
         for (int j = 0; j < 1; j++) {
