@@ -1,170 +1,70 @@
 package classwork.homework1;
 
 public class FigurePainter {
-    public static void main(String[] args) {
-
-        /* homework 1*/
-        for (int i = '*'; i < 5; i++) ;
-        for (int j = 0; j < 5; j++)
-            System.out.print('*' + " ");
-        System.out.println();
-        for (int i = '*'; i < 4; i++) ;
-        for (int j = 0; j < 4; j++)
-            System.out.print('*' + " ");
-        System.out.println();
-        for (int i = '*'; i < 3; i++) ;
-        for (int j = 0; j < 3; j++)
-            System.out.print('*' + " ");
-        System.out.println();
-        for (int i = '*'; i < 2; i++) ;
-        for (int j = 0; j < 2; j++)
-            System.out.print('*' + " ");
-        System.out.println();
-        for (int i = '*'; i < 1; i++) ;
-        for (int j = 0; j < 1; j++)
-            System.out.print('*' + " ");
-
-
-        /*homework 2*/
-        System.out.println();
-        System.out.println();
-        for (int i = '*'; i < 1; i++) ;
-        for (int j = 0; j < 1; j++)
-            System.out.print('*' + " ");
-        System.out.println();
-        for (int i = '*'; i < 2; i++) ;
-        for (int j = 0; j < 2; j++)
-            System.out.print('*' + " ");
-        System.out.println();
-        for (int i = '*'; i < 3; i++) ;
-        for (int j = 0; j < 3; j++)
-            System.out.print('*' + " ");
-        System.out.println();
-        for (int i = '*'; i < 4; i++) ;
-        for (int j = 0; j < 4; j++)
-            System.out.print('*' + " ");
-        System.out.println();
-        for (int i = '*'; i < 5; i++) ;
-        for (int j = 0; j < 5; j++)
-            System.out.print('*' + " ");
-
-
-        /*homework 3 */
-        System.out.println();
-        System.out.println();
-        for (int i = '*'; i < 1; i++) ;
-        for (int j = 0; j < 1; j++)
-            System.out.print("        " + '*');
-        System.out.println();
-        for (int i = '*'; i < 2; i++) ;
-        System.out.print("     ");
-        for (int j = 0; j < 2; j++)
-            System.out.print(" " + '*');
-        System.out.println();
-        for (int i = '*'; i < 3; i++) ;
-        System.out.print("   ");
-        for (int j = 0; j < 3; j++)
-            System.out.print(" " + '*');
-        System.out.println();
-        for (int i = '*'; i < 4; i++) ;
-        System.out.print(" ");
-        for (int j = 0; j < 4; j++)
-            System.out.print(" " + '*');
-        System.out.println();
-        for (int i = '*'; i < 5; i++) ;
-        for (int j = 0; j < 5; j++)
-            System.out.print('*' + " ");
-
-
-        /*homework 4 */
-        System.out.println();
-        System.out.println();
-        for (int i = '*'; i < 5; i++) ;
-        for (int j = 0; j < 5; j++)
-            System.out.print('*' + " ");
-        System.out.println();
-        for (int i = '*'; i < 4; i++) ;
-        System.out.print(" ");
-        for (int j = 0; j < 4; j++)
-            System.out.print(" " + '*');
-        System.out.println();
-        for (int i = '*'; i < 3; i++) ;
-        System.out.print("   ");
-        for (int j = 0; j < 3; j++)
-            System.out.print(" " + '*');
-        System.out.println();
-        for (int i = '*'; i < 2; i++) ;
-        System.out.print("     ");
-        for (int j = 0; j < 2; j++)
-            System.out.print(" " + '*');
-        for (int i = '*'; i < 1; i++) ;
-        for (int j = 0; j < 1; j++) {
+        public static void main(String[] args) {
             System.out.println();
-            System.out.print("        " + '*');
-        }
+            //homework 1
+            for (int i = 0; i < 5; i++) {
+                for (int j = 0; j <= i; j++) {
+                    System.out.print("* ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+            System.out.println();
+            //homework 2
+            for (int i = 5; i > 0; i--) {
+                for (int j = 0; j < i; j++) {
+                    System.out.print("* ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+            System.out.println();
+            //homework 3
+            for (int i = 5; i > 0; i--){
+                for (int j = 0; j <=i ; j++) {
+                    System.out.print("  ");
+                }
+                for (int j = 0; j <= (5 - i); j++) {
+                    System.out.print("* ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+            System.out.println();
+            //homework 4
+            for (int i = 5; i > 0; i--) {
+                System.out.print("    ");
+                for (int j = 0; j<(5-i) ; j++) {
+                    System.out.print("  ");
+                }
+                for (int j = 0; j <= (i-1); j++) {
+                    System.out.print("* ");
+                }
+                System.out.println();}
+            System.out.println();
+            System.out.println();
+            //homework 5
+            for (int i = 5; i >0; i--) {
+                for (int j = 0; j <=i ; j++) {
+                    System.out.print(" ");
+                }
+                for (int j = 0; j <= (5 - i); j++) {
+                    System.out.print("* ");
+                }
+                System.out.println();
+            }
+            for (int i = 4; i > 0; i--) {
+                System.out.print("  ");
+                for (int j = 0; j<(5-i) ; j++) {
+                    System.out.print(" ");
+                }
+                for (int j = 0; j <= (i-1); j++) {
+                    System.out.print("* ");
+                }
+                System.out.println();
 
+            }
 
-        /*homework 5 */
-        System.out.println();
-        System.out.println();
-        for (int i = '*'; i < 1; i++) ;
-        for (int j = 0; j < 1; j++) {
-            System.out.print("    ");
-            System.out.print('*');
-        }
-        System.out.println();
-        for (int i = '*'; i < 2; i++) ;
-        System.out.print("  ");
-        for (int j = 0; j < 2; j++) {
-            System.out.print(" ");
-            System.out.print('*');
-        }
-        System.out.println();
-        for (int i = '*'; i < 3; i++) ;
-        System.out.print(" ");
-        for (int j = 0; j < 3; j++) {
-            System.out.print(" ");
-            System.out.print('*');
-        }
-
-        System.out.println();
-        for (int i = '*'; i < 4; i++) ;
-        System.out.print("");
-        for (int j = 0; j < 4; j++) {
-            System.out.print(" ");
-            System.out.print('*');
-        }
-        System.out.println();
-        for (int i = '*'; i < 5; i++) ;
-        for (int j = 0; j < 5; j++) {
-            System.out.print('*' + " ");
-        }
-        System.out.println();
-        for (int i = '*'; i < 4; i++) ;
-        System.out.print("");
-        for (int j = 0; j < 4; j++) {
-            System.out.print(" ");
-            System.out.print('*');
-        }
-        System.out.println();
-        for (int i = '*'; i < 3; i++) ;
-        System.out.print(" ");
-        for (int j = 0; j < 3; j++) {
-            System.out.print(" ");
-            System.out.print('*');
-        }
-        System.out.println();
-        for (int i = '*'; i < 2; i++) ;
-        System.out.print("  ");
-        for (int j = 0; j < 2; j++) {
-            System.out.print(" ");
-            System.out.print('*');
-        }
-        System.out.println();
-        for (int i = '*'; i < 1; i++) ;
-        for (int j = 0; j < 1; j++) {
-            System.out.print("    ");
-            System.out.print('*');
-        }
-    }
-}
+        }}
