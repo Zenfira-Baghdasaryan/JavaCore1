@@ -32,12 +32,6 @@ public class ForExamples {
         System.out.println();
         System.out.println();
         //Homework 3
-        /*  int[] numbers = {2, 5, 8, 4, 9, 3, 7};
-        int max =0;
-        for (int i = 0; i < numbers.length; i++) {
-            max= numbers.length+2;
-            System.out.print(max);
-*/
         int[] numbers = {2, 5, 8, 4, 9, 3, 7};{
         int max =0;
         for (int i = 0; i < numbers.length; i++)
