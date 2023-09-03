@@ -7,7 +7,7 @@ import java.sql.SQLOutput;
 public class ForExamples {
     public static void main(String[] args) {
         //Homework 1
-        for (int i = 0; i <= 1000; i++) {
+        for (int i = 1; i <= 1000; i++) {
             System.out.print("-");
             System.out.print(i);
 
@@ -25,11 +25,13 @@ public class ForExamples {
         //Homework 3
         int[] numbers = {2, 5, 8, 4, 9, 3, 7};
         {
-            int max = 0;
+            int max = numbers[0];
             for (int i = 0; i < numbers.length; i++)
-                max = numbers.length + 2;
-            System.out.print(max);
+                if (numbers[i] > max) {
+                    max = numbers[i];
+                }
+
+            System.out.println("Max:" + max);
         }
     }
-
 }
