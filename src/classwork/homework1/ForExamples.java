@@ -8,8 +8,8 @@ public class ForExamples {
     public static void main(String[] args) {
         //Homework 1
         for (int i = 0; i <= 1000; i++) {
-                System.out.print("-");
-                System.out.print(i);
+            System.out.print("-");
+            System.out.print(i);
 
         }
         System.out.println();
@@ -23,11 +23,13 @@ public class ForExamples {
         System.out.println();
         System.out.println();
         //Homework 3
-        int[] numbers = {2, 5, 8, 4, 9, 3, 7};{
-        int max =0;
-        for (int i = 0; i < numbers.length; i++)
-            max= numbers.length+2;
+        int[] numbers = {2, 5, 8, 4, 9, 3, 7};
+        {
+            int max = 0;
+            for (int i = 0; i < numbers.length; i++)
+                max = numbers.length + 2;
             System.out.print(max);
-    }}
+        }
+    }
 
 }
