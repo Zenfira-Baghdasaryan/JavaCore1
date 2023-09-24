@@ -26,20 +26,21 @@ public class DynamicArray {
     }
 
     public void deleteByIndex(int index) {
-        int[] j = new int[10];
-        for (int k = 0; k != index; k++)
-            if (j != array) ;
-        System.out.print("There is no element");
-
+        if (index < 0 || index > array[array.length - 1]) {
+            System.out.println("There is no element");
+            return;
+        }
+        for (int i = index; i < size; i++) {
+            array[i - 1] = array[i];
+        }
     }
 
     public void setArray(int value, int index) {
-        int[] a = new int[index + 10];
-        for (int i = index; i < array.length; i++) {
+        index = value;
+        for (int i = index; i < size; i++) {
+            array[i - 1] = array[i];}
+            System.out.println("No element");
 
-        }
-        value = index;
-        System.out.println("There is no element");
     }
 
     public boolean exists(int value) {
@@ -52,8 +53,10 @@ public class DynamicArray {
     }
 
     public int getIndexByValue(int value) {
-        if (value != size) ;
+        for (int i = value; i < array.length; i++)
+            if (value != size) ;
         return 0;
+
     }
 }
 

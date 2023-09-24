@@ -13,9 +13,9 @@ public class DynamicArrayDemo {
         dy.add(10);
         dy.print();
         System.out.println();
-        new DynamicArray().deleteByIndex(7);
+        new DynamicArray().deleteByIndex(8);
         System.out.println();
-        new DynamicArray().setArray(6, 789);
+        new DynamicArray().setArray(7, 9);
         System.out.println();
         new DynamicArray().exists(13);
         System.out.println();
