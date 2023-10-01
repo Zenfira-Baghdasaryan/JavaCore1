@@ -11,7 +11,33 @@ public class DynamicArray {
         array[size++] = value;
     }
 
-    void extend() {
+    void add(int index, int value) {
+        if (index < 0 || index >= size) {
+            System.out.println("Wrong index");
+            return;
+        }
+        if (size == array.length) {
+            extend();
+        }
+        for (int i = size; i >= index; i--) {
+            array[i + 1] = array[i];
+
+        }
+        System.out.println();
+        array[index] = value;
+        size++;
+    }
+
+    int getIndexByValue(int value) {
+        for (int i = 0; i < size; i++) {
+            if (array[i] == value) {
+                return i-1;
+            }
+        }
+        return -1;
+    }
+
+    private void extend() {
         int[] tmp = new int[array.length + 10];
         for (int i = 0; i < size; i++) {
             tmp[i] = array[i];
@@ -25,39 +51,39 @@ public class DynamicArray {
         }
     }
 
-    public void deleteByIndex(int index) {
-        if (index < 0 || index > array[array.length - 1]) {
+    void deleteByIndex(int index) {
+        if (index < 0 || index >= size) {
             System.out.println("There is no element");
             return;
         }
-        for (int i = index; i < size; i++) {
+        for (int i = index + 1; i < size; i++) {
             array[i - 1] = array[i];
         }
+        size--;
+        System.out.println();
     }
 
-    public void setArray(int value, int index) {
-        index = value;
-        for (int i = index; i < size; i++) {
-            array[i - 1] = array[i];}
-            System.out.println("No element");
-
+    void set(int index, int value) {
+        if (index < 0 || index >= size) {
+            System.out.println("There is no element");
+            return;
+        }
+        System.out.println();
+        array[index] = value;
     }
 
-    public boolean exists(int value) {
-        if (value != size) {
-            System.out.println("false");
-        } else {
-            System.out.println("true");
+    boolean exists(int value) {
+        for (int i = 0; i < size; i++) {
+            if (array[i] == value) {
+                System.out.println();
+                return true;
+            }
+
+
         }
         return false;
     }
 
-    public int getIndexByValue(int value) {
-        for (int i = value; i < array.length; i++)
-            if (value != size) ;
-        return 0;
-
-    }
 }
 
 

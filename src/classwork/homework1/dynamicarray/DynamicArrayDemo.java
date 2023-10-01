@@ -2,6 +2,7 @@ package classwork.homework1.dynamicarray;
 
 import java.io.File;
 import java.sql.Array;
+import java.sql.SQLOutput;
 
 public class DynamicArrayDemo {
     public static void main(String[] args) {
@@ -12,14 +13,16 @@ public class DynamicArrayDemo {
         dy.add(9);
         dy.add(10);
         dy.print();
-        System.out.println();
-        new DynamicArray().deleteByIndex(8);
-        System.out.println();
-        new DynamicArray().setArray(7, 9);
-        System.out.println();
-        new DynamicArray().exists(13);
-        System.out.println();
-        new DynamicArray().getIndexByValue(9);
-        System.out.println();
+        dy.deleteByIndex(2);
+        dy.print();
+        dy.set(2, 44);
+        dy.print();
+        dy.add(3, 99);
+        dy.print();
+        System.out.println(dy.exists(7));
+        System.out.println(dy.exists(77));
+        System.out.println(dy.getIndexByValue(5));
+        System.out.println(dy.getIndexByValue(90));
+
     }
 }
