@@ -4,6 +4,9 @@ import org.w3c.dom.Text;
 
 public class BraceCheckerTest {
     public static void main(String[] args) {
-        BraceChecker bc = new BraceChecker();
+        String text="[Hello( (from) {Java]";
+        BraceChecker braceChecker = new BraceChecker(text);
+        braceChecker.check();
+
 
 }}

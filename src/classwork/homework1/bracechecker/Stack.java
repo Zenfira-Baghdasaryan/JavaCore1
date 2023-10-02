@@ -1,4 +1,4 @@
-package classwork.chapter6;
+package classwork.homework1.bracechecker;
 
 public class Stack {
     int stck[] = new int[10];
@@ -9,14 +9,14 @@ public class Stack {
 
     }
 
-    void push(int item) {
+  public   void push(int item) {
         if (index == 9)
             System.out.println("Stack is full.");
         else
             stck[++index] = item;
     }
 
-    int pop() {
+    public int pop() {
         if (index < 0) {
             System.out.println("Stack underflow.");
             return 0;
@@ -24,4 +24,7 @@ public class Stack {
         } else
             return stck[index--];
     }
+   public int getIndex(){
+        return index;
+   }
 }

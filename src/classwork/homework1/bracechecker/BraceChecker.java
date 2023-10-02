@@ -1,29 +1,35 @@
 package classwork.homework1.bracechecker;
 
-import classwork.chapter6.Stack;
-
 public class BraceChecker {
-    public static void main(String[] args) {
-        String text = "Hello (from) [Java} ";
-        int count = 0;
-        for (int i = 0; i < text.length(); i++) {
-            switch (text.charAt(i)) {
-                case '(':
-                    count++;
-                case '{', '[':
-                    count += 2;
-                case ')':
-                    count--;
-                case '}', ']':
-                    count -=2;
-            }
-        }
-        if( count==0){
-            System.out.println("Brackets are valid");
-        }
-    else{
-            System.out.println("Brackets are invalid");
+    private String text;
+
+    BraceChecker(String text) {
+        this.text = text;
     }
 
-}}
+    void check() {
+        Stack stack = new Stack();
+        for (int i = 0; i < text.length(); i++) {
+            char c = text.charAt(i);
+            switch (c) {
+                case '(':
+                case '{':
+                case '[':
+                    stack.push(c);
+                    break;
+                case ')':
+                    int pop = stack.pop();
+                    if (pop == 0) {
+                        System.out.println("Error." + c + "closed,but not opened. at" + i);
+                    } else if (pop != '(') {
+                        System.out.println("Error." + c + "closed, but opened" + (char) pop + "at" + i);
+                    }
+                    break;
+            }
+        }
+        while (stack.getIndex() != -1) {
+            System.out.println("Error. Opened " + (char) stack.pop() + " but not closed");
+        }
+    }
+}
 
