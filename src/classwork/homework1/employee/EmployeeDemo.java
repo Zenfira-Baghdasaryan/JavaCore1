@@ -46,6 +46,7 @@ public class EmployeeDemo {
                 case "3":
                     System.out.println("Please input employeeID");
                     String employeeid = scanner.nextLine();
+                    employeeStorage.print();
                     break;
                 case "4":
                     System.out.println("Please input company name");
