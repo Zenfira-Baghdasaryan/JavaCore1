@@ -17,6 +17,7 @@ public class EmployeeDemo {
             System.out.println("Please input 2 for PRINT ALL EMPLOYEE");
             System.out.println("Please input 3 for SEARCH EMPLOYEE BY EMPLOYEE ID");
             System.out.println("Please input 4 for SEARCH EMPLOYEE BY COMPANY NAME");
+            System.out.println("Please input 5 for DELETE BY EMPLOYEEID");
             String command = scanner.nextLine();
             switch (command) {
                 case "0":
@@ -52,6 +53,10 @@ public class EmployeeDemo {
                     System.out.println("Please input company name");
                     company = scanner.nextLine();
                     employeeStorage.print();
+                    break;
+                case "5":
+                    System.out.println("Delete by employeeID");
+                    employeeStorage.DeletebyId(scanner.nextLine());
                     break;
                 default:
                     System.out.println("Invalid command! Try again");

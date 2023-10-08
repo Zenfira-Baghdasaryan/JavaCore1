@@ -28,8 +28,20 @@ public class EmployeeStorage {
     }
 
     private void extend() {
-        Employee[] tmp = new Employee[ employees.length + 10];
-        System.arraycopy(employees, 0, tmp, 0,employees.length);
+        Employee[] tmp = new Employee[employees.length + 10];
+        System.arraycopy(employees, 0, tmp, 0, employees.length);
         employees = tmp;
+    }
+
+    public void DeletebyId(String employeeID) {
+        if (employeeID.length() < 0 || employeeID.length() >= employeeID.length()) {
+            System.out.println("There is ID");
+            return;
+        }
+        for (int i = employeeID.length(); i < size; i++) {
+            size--;
+            System.out.println();
+        }
+
     }
 }
