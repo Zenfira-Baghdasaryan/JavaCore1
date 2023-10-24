@@ -1,6 +1,5 @@
 package classwork.homework1.employee;
 
-import java.util.PropertyResourceBundle;
 import java.util.Scanner;
 
 public class EmployeeManagementMain {

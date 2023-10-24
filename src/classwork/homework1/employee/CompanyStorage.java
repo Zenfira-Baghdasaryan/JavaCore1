@@ -1,7 +1,5 @@
 package classwork.homework1.employee;
 
-import java.util.PropertyResourceBundle;
-
 public class CompanyStorage {
     private Company[] companies = new Company[10];
     private int size;
