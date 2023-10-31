@@ -1,5 +1,10 @@
 package classwork.homework1.employee;
 
+import classwork.homework1.employee.model.Company;
+import classwork.homework1.employee.model.Employee;
+import classwork.homework1.employee.storage.CompanyStorage;
+import classwork.homework1.employee.storage.EmployeeStorage;
+
 import java.util.Scanner;
 
 public class EmployeeManagementMain {

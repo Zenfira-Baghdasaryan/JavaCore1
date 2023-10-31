@@ -1,4 +1,7 @@
-package classwork.homework1.employee;
+package classwork.homework1.employee.storage;
+
+import classwork.homework1.employee.model.Company;
+import classwork.homework1.employee.model.Employee;
 
 public class EmployeeStorage {
     private Employee[] employees = new Employee[10];
