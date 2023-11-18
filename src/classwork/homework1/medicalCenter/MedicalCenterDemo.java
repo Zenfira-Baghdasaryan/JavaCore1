@@ -9,7 +9,7 @@ import java.text.ParseException;
 import java.util.Date;
 import java.util.Scanner;
 
-public class MedicalCenterDemo implements Commands {
+public class  MedicalCenterDemo implements Commands {
     private static Scanner scanner = new Scanner(System.in);
     private static PersonStorage personStorage = new PersonStorage();
 

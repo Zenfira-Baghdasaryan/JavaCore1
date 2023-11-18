@@ -11,13 +11,13 @@ public interface Commands {
     String PRINT_TODAYS_PATIENTS = "7";
 
     static void printCommands() {
-        System.out.println("Please input " + EXIT + "for EXIT");
-        System.out.println("Please input " + ADD_DOCTOR + "for ADD_DOCTOR");
-        System.out.println("Please input " + SEARCH_DOCTOR_BY_PROFESSION + "for SEARCH_DOCTOR_BY_PROFESSION");
-        System.out.println("Please input " + DELETE_DOCTOR_BY_ID + "for DELETE_DOCTOR_BY_ID");
-        System.out.println("Please input " + CHANGE_DOCTOR_BY_ID + "for CHANGE_DOCTOR_BY_ID");
-        System.out.println("Please input " + ADD_PATIENT + "for ADD_PATIENT");
-        System.out.println("Please input " + PRINT_ALL_PATIENTS_BY_DOCTOR + "for PRINT_ALL_PATIENTS_BY_DOCTOR");
-        System.out.println("Please input " + PRINT_TODAYS_PATIENTS + "for PRINT_TODAYS_PATIENTS");
+        System.out.println("Please input " + EXIT + " for EXIT");
+        System.out.println("Please input " + ADD_DOCTOR + " for ADD_DOCTOR");
+        System.out.println("Please input " + SEARCH_DOCTOR_BY_PROFESSION + " for SEARCH_DOCTOR_BY_PROFESSION");
+        System.out.println("Please input " + DELETE_DOCTOR_BY_ID + " for DELETE_DOCTOR_BY_ID");
+        System.out.println("Please input " + CHANGE_DOCTOR_BY_ID + " for CHANGE_DOCTOR_BY_ID");
+        System.out.println("Please input " + ADD_PATIENT + " for ADD_PATIENT");
+        System.out.println("Please input " + PRINT_ALL_PATIENTS_BY_DOCTOR + " for PRINT_ALL_PATIENTS_BY_DOCTOR");
+        System.out.println("Please input " + PRINT_TODAYS_PATIENTS + " for PRINT_TODAYS_PATIENTS");
     }
 }
