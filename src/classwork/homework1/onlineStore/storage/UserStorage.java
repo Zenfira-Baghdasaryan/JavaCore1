@@ -5,45 +5,27 @@ import classwork.homework1.onlineStore.model.enums.UserType;
 import classwork.homework1.onlineStore.util.StorageSerializeUtil;
 
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
 
 public class UserStorage implements Serializable {
-    private User[] users = new User[10];
     private int size;
 
-    public void add(User user) {
-        if (users.length == size) {
-            extend();
-        }
-        users[size++] = user;
-        StorageSerializeUtil.serializeUserStorage(this);
-    }
+    public static void main(String[] args) {
+        Map<String, User> myMap = new HashMap<>();
 
-    public void print() {
-        for (int i = 0; i < size; i++) {
-            System.out.println(users[i]);
-        }
-    }
 
-    private void extend() {
-        User[] tmp = new User[users.length + 10];
-        System.arraycopy(users, 0, tmp, 0, users.length);
-        users = tmp;
-    }
+        myMap.put("zenfira@mail.com", new User("2005", "Zenfira", "zenfira@mail.com", "******", UserType.ADMIN));
+        myMap.put("anna@mail.com", new User("2006", "Anna", "anna@mail.com", "******", UserType.USER));
+        myMap.put("vahan@mail.ru", new User("2004", "Vahan", "vahan@mail.ru", "******", UserType.USER));
 
-    public User getByEmail(String email) {
-        for (int i = 0; i < size; i++) {
-            if (users[i].getEmail().equals(email)) {
-                return users[i];
-            }
-        }
-        return null;
-    }
+        User user = myMap.get("zenfira@mail.com");
+        System.out.println(user);
 
-    public void printByType(UserType userType) {
-        for (int i = 0; i < size; i++) {
-            if (users[i].getUserType() == userType) {
-                System.out.println(users[i]);
-            }
-        }
-    }
-}
+//    }  public void printByType(UserType userType) {
+//            for (int i = 0; i < size; i++) {
+//                if (users[i].getUserType() == userType) {
+//                    System.out.println(users[i]);
+//                }
+//    }
+}}

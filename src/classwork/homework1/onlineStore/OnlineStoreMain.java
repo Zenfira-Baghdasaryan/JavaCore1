@@ -15,6 +15,8 @@ import classwork.homework1.onlineStore.util.IdGenerator;
 import classwork.homework1.onlineStore.util.StorageSerializeUtil;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class OnlineStoreMain implements Commands { private final static Scanner SCANNER = new Scanner(System.in);
@@ -46,17 +48,17 @@ public class OnlineStoreMain implements Commands { private final static Scanner 
     }
 
     private static void register() {
+        Map<String, User> myMap = new HashMap<>();
         System.out.println("Please input name,email,password,userType(ADMIN,USER)");
         String userDataStr = SCANNER.nextLine();
         String[] userDataArr = userDataStr.split(",");
-        User user = USER_STORAGE.getByEmail(userDataArr[1]);
+        User user=myMap.get("zenfira@mail.com");
         if (user != null) {
             System.out.println("User already exists!");
             return;
         }
         try {
-            user = new User(IdGenerator.generateId(), userDataArr[0], userDataArr[1], userDataArr[2], UserType.valueOf(userDataArr[3].toUpperCase()));
-            USER_STORAGE.add(user);
+            myMap.put(user.getEmail(), new User(IdGenerator.generateId(), userDataArr[0], userDataArr[1], userDataArr[2], UserType.valueOf(userDataArr[3].toUpperCase())));
             System.out.println("User registered!");
         } catch (IllegalArgumentException | ArrayIndexOutOfBoundsException e) {
             System.out.println("Invalid data or user type!");
@@ -64,10 +66,11 @@ public class OnlineStoreMain implements Commands { private final static Scanner 
     }
 
     private static void login() {
+        Map<String, User> myMap = new HashMap<>();
         System.out.println("Please input email,password");
         String loginDataStr = SCANNER.nextLine();
         String[] loginDataArr = loginDataStr.split(",");
-        User user = USER_STORAGE.getByEmail(loginDataArr[0]);
+        User user= myMap.get("email");
         if (user == null || !user.getPassword().equals(loginDataArr[1])) {
             System.out.println("email or password is incorrect!");
             return;
@@ -159,7 +162,7 @@ public class OnlineStoreMain implements Commands { private final static Scanner 
                     PRODUCT_STORAGE.print();
                     break;
                 case PRINT_USERS:
-                    USER_STORAGE.printByType(UserType.USER);
+//                    USER_STORAGE.printByType(UserType.USER);
                     break;
                 case PRINT_ORDERS:
                     ORDER_STORAGE.print();
